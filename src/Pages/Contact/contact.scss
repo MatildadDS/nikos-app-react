@@ -1,0 +1,76 @@
+@import '../../_settings/settings';
+
+.background_img{
+  @include media('mid'){
+    display: none;
+  }
+}
+
+.contact_container{
+  @include media('mid'){
+    background-color: black;
+    height: 1000px;
+    width: 758px;
+  }
+}
+
+.contact_title {
+    position: relative;
+    color: white;
+    padding-left: 250px;
+    padding-top: 100px;
+
+    @include media('mid'){
+      padding-top: 50px;
+      padding-left: 280px;
+    }
+  }
+  
+  .contact_logo {
+    position: relative;
+    padding-top: 230px;
+    padding-left: 40%;
+
+    @include media('mid'){
+      padding-top: 80px;
+      padding-left: 35%;
+    }
+  }
+
+  .contact_logo img{
+    width: 150px;
+    height: 150px;
+  }
+  
+  .contact_info {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .contact_para {
+    position: relative;
+    color: white;
+    padding-left: 250px;
+    padding-top: 40px;
+    font-size: 1.2em;
+
+      @include media('mid'){
+        font-size: 0.8em;
+        padding-left: 50px;
+        padding-top: 100px;
+      }
+  }
+  
+  .contact_socials img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    top: 270px;
+    left: 900px;
+      @include media('mid'){
+        position: relative;
+        padding-left: 50px;
+      }
+  }
+

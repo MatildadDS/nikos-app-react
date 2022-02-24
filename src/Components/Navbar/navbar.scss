@@ -1,0 +1,101 @@
+@import '../../_settings/settings';
+
+.nikos_logo img{
+  width: 50px;
+  left: 10px;
+  
+  @include media('mid'){
+    width: 20px;
+  }
+}
+
+.navbar_burger {
+  height: 20px;
+  top: 20px;
+  background: transparent;
+    border: none;
+    display: block;
+    padding-left: 10px;
+    position: fixed;
+    &:hover {
+      cursor: pointer;
+
+    @include media('huge'){
+    height: 40px;
+    top: 20px;
+    
+    }
+  }
+}
+
+.navbar_links {
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  height: 100vh;
+  padding: 2rem;
+  visibility: hidden;
+  background-color: transparent;
+  color: white;
+  text-align: right;
+
+}
+.show-nav {
+  .navbar_links {
+    top: 50px;
+	  visibility: visible;
+  }
+  .burger-bar {
+    background: transparent;
+    width: 0;
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+.navbar_link {
+  display: block;
+  font-size: 1.3vw;
+  padding: 0.2rem;
+  color: white;
+  @include media('mid'){
+    font-size: 1.8vw;
+  }
+
+}
+.burger-bar {
+  display: block;
+  width: 40px;
+  height: 3px;
+  position: relative;
+  border-radius: 3px;
+  background: white;
+  &::before {
+    display: block;
+    width: 40px;
+    height: 3px;
+    position: relative;
+    border-radius: 3px;
+    background: white;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: translateY(-12px);
+  }
+  &::after {
+    display: block;
+    width: 40px;
+    height: 3px;
+    position: relative;
+    border-radius: 3px;
+    background: white;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: translateY(12px);
+  }
+}

@@ -1,0 +1,95 @@
+@import '../../_settings/settings';
+
+.ecosystem_container{
+  @include media('mid'){
+    background-color: black;
+    height: fit-content;
+
+  }
+}
+.ecosystem_logo {
+    position: relative;
+    left: 89%;
+    top: 10px;
+    @include media('mid'){
+      left: 74%;
+    }
+  
+    img {
+      width: 100px;
+      @include media('mid'){
+        width: 45px;
+        top: 6%;
+      }
+    }
+  }
+
+  .ecosystem_title{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 100px 0 30px 230px;
+    text-transform: uppercase;
+    color: white;
+      @include media('mid'){
+      text-align: center; 
+      padding-left: 0;       
+      padding-top: 30px;
+      }
+  }
+  
+  .ecosystem_intro {
+    position: relative;
+    color: white;
+    padding-left: 230px;
+    font-size: 1.3em;
+
+    @include media('mid'){
+      font-size: 0.8em;
+      padding-left: 0%;
+      text-align: center;
+      
+    }
+  }
+  
+  .card_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 1600px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 60px 90px;
+
+    @include media('mid'){
+      @include flexbox();
+      @include flex-direction(column);
+      margin-left: 240px;
+    }
+  }
+  
+  .card {
+    display: flex;
+    width: 240px;
+    background: rgba(206, 201, 201, 0.5);
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 20px 20px 10px;
+    color: white;
+      @include media('mid'){
+        padding: 10px 5px;
+      }
+  
+    img {
+      width: 200px;
+      border-radius: 5px;
+      padding-bottom: 10px;
+      @include media('mid'){
+        width: 120px;
+      }
+    }
+  }
+  
+  .card_link {
+    color: white;
+  }

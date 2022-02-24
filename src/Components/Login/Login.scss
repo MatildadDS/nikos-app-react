@@ -1,0 +1,19 @@
+@import '../../_settings/settings';
+
+.makeStyles-form-5{
+    @include media('mid'){
+        width: 768px;
+    }
+}
+
+.makeStyles-image-2{
+    @include media('mid'){
+        width: 100px;
+    }
+}
+
+.makeStyles-form-5{
+    @include media ('mid'){
+        width: 150%;
+    }
+}

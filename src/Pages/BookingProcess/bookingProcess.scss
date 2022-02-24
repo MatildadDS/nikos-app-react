@@ -1,0 +1,114 @@
+@import '../../_settings/settings';
+
+.bookingProcess_container{
+
+  @include media('mid'){
+    background-color: black;
+    height: 800px;
+  }
+}
+
+.background_img{
+  
+  @include media('mid'){
+    display: none;
+  }
+}
+
+.home_background img {
+  width: 100%;
+  height: 200%;
+  background: no-repeat;
+}
+
+.booking_logo {
+  position: relative;
+  left: 89%;
+  top: 10px;
+
+  @include media('mid'){
+    left: 74%;
+  }
+
+  img {
+    width: 100px;
+
+    @include media('mid'){
+      width: 45px;
+      top: 6%;
+    }
+  }
+}
+
+.bookingProcess_video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1024px;
+
+    @include media('mid'){
+      display: block;
+      width: 768px;
+      padding-left: 100px;
+    }
+
+  iframe {
+    position: relative;
+  }
+}
+
+.bookingProcess_title {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 100px 0 30px 280px;
+  text-transform: uppercase;
+  color: white;
+
+  @include media('mid'){
+    padding-top: 20px;
+  }
+}
+
+.bookingProcess_txt {
+  position: relative;
+  color: white;
+  width: 1200px;
+  padding: 80px 0 0 0;
+
+  @include media('mid'){
+    width: 650px;
+    padding-top: 20px;
+
+  }
+
+  h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 10px 0 0 80px;
+
+    @include media('mid'){
+      padding-top: 0;
+      padding-left: 100px;
+    }
+  }
+
+  p {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1.3em;
+    text-align: justify;
+    padding-left: 80px;
+
+    @include media('mid'){
+      font-size: 0.6em;
+      padding-left: 100px;
+      width: 650px;
+    }
+  }
+}
+
+.signup_btn {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  font-size: 1.4em;
+}

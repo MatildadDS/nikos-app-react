@@ -1,0 +1,8 @@
+@import '../../_settings/settings';
+
+.project_container{
+  @include media('mid'){
+    background-color: black;
+  }
+}
+

@@ -1,0 +1,135 @@
+@import '../../_settings/settings';
+
+.background_img{
+    @include media('mid'){
+      display: none;
+    }
+  }
+
+.projectLists_container{
+    height: fit-content;
+    left: 100px;
+
+    @include media('mid'){
+        background-color: black;
+        height: 400px;
+        width: 758px;
+        @include flexbox();
+        @include flex-direction(column);
+    }
+}
+
+.projectLists_background{
+    position: absolute;
+}
+
+.projectsList_background img{
+    width: 100%;
+    height: 200%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.list{
+    position: relative;
+    color: white;
+
+    @include media('mid'){
+        @include flexbox();
+        @include flex-direction(column);
+        width: 500px;
+    }
+}
+
+.action_btn{
+    display: flex;
+    font-size: smaller;
+}
+
+.projectList_para a{
+    color: white;
+    @include media('mid'){}
+}
+
+.list-group-item{
+    background-color: rgba(99, 99, 99, 0.733);
+
+}
+
+.list-group-item.active{
+    z-index: 2;
+    color: #fff;
+    background-color: rgb(160, 158, 158);
+    border-color: gray;
+    font-size: 1.2em;
+}
+
+.projectlists_btn{
+    display: block;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.input-group{
+    padding-top: 30px;
+}
+
+.col-md-6{
+    padding-top: 20px;
+}
+
+.my_project{
+    padding-left: 30px;
+    width: 650px;
+    @include media('mid'){
+    }
+}
+
+
+.list-group{
+    padding-top: 20px;
+}
+
+
+// .badge-warning{
+//     color: white;
+//     background-color: gray;
+//     font-weight: 400;
+//     font-size: 1em;
+//     text-align: center;
+//     border: 1px solid transparent;
+//     padding: .375rem .75rem;
+//     line-height: 1.5;
+//     border-radius: .25rem;
+//     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+// }
+
+.edit-form{
+    position: relative;
+    padding-top: 30px;
+    margin: auto;
+}
+
+.continue_exploring{
+    position: relative;
+    text-align: center;
+}
+
+.continue_exploring a{
+    color: red;
+}
+
+h4{
+    color: white;
+}
+
+label{
+    color: white;
+}
+

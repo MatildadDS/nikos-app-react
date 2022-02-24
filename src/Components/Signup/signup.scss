@@ -1,0 +1,46 @@
+@import '../../_settings/settings';
+
+.background_img{
+  @include media('mid'){
+    display: none;
+  }
+}
+
+.registerform_container{
+  @include media('mid'){
+    background-color: black;
+    height: 1000px;
+    width: 758px;
+  }
+}
+
+.registerform_title {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  color: white;
+}
+
+.myForm {
+  min-width: 400px;
+  position: absolute;
+  text-align: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+  color: white;
+
+  @include media('mid'){
+    top: 70%;
+  }
+}
+
+.btn {
+  background-color: black;
+}
+
+.btn-primary:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
